@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nota | Download</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f9;
+      --text: #1f2933;
+      --muted: #4b5563;
+      --accent: #2563eb;
+      --border: #d1d5db;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --text: #e5e7eb;
+        --muted: #cbd5e1;
+        --border: #1f2937;
+      }
+    }
+
+    body {
+      font-family: "Inter", "Pretendard", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 1rem 3rem;
+    }
+
+    header {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.2rem;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: #ffffff;
+      transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.18);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      border-color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 1rem;
+    }
+
+    section {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul {
+      margin: 0.5rem 0 0.75rem 1.2rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>nota</h1>
+    <p>개발자를 위한 데스크톱 마크다운 편집기</p>
+    <p>(A desktop Markdown editor for developers)</p>
+    <p>불필요한 기능을 덜어내고, 작성과 편집에 집중할 수 있도록 설계되었습니다.</p>
+    <p>(Designed to focus on writing and editing, without unnecessary complexity.)</p>
+    <div class="hero-actions">
+      <a class="button primary" href="https://github.com/snowsee/nota-release/releases/latest" target="_blank" rel="noopener">Download for Windows</a>
+      <a class="button" href="https://github.com/snowsee/nota-release/releases/latest" target="_blank" rel="noopener">Download for macOS</a>
+      <a class="button" href="https://github.com/snowsee/nota-release/releases" target="_blank" rel="noopener">모든 버전 보기 / View all releases</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="installation">
+      <h2>Installation / 설치 방법</h2>
+      <p>nota는 별도의 설정 없이 바로 설치해 사용할 수 있습니다.</p>
+      <p>(nota can be installed and used without additional configuration.)</p>
+      <ul>
+        <li>Windows: 설치 파일 실행 후 안내에 따라 설치</li>
+        <li>macOS: 앱을 Applications 폴더로 이동</li>
+        <li>최초 실행 시 OS 보안 경고가 나타날 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section id="update">
+      <h2>Update / 업데이트</h2>
+      <p>새 버전은 GitHub Releases를 통해 배포됩니다.</p>
+      <p>(New versions are distributed via GitHub Releases.)</p>
+      <ul>
+        <li>기존 버전 위에 재설치하여 바로 업데이트할 수 있습니다.</li>
+        <li>개인 설정과 데이터는 일반적인 범위에서 유지됩니다.</li>
+        <li><a href="https://github.com/snowsee/nota-release/releases/latest" target="_blank" rel="noopener">최신 버전 다운로드</a></li>
+      </ul>
+    </section>
+
+    <section id="support">
+      <h2>Support / Q&amp;A</h2>
+      <p>질문과 사용 관련 문의는 GitHub Discussions를 통해 받고 있습니다.</p>
+      <p>(Questions and usage support are handled via GitHub Discussions.)</p>
+      <p><strong><a href="https://github.com/snowsee/nota-release/discussions" target="_blank" rel="noopener">Discussions 바로가기</a></strong></p>
+      <p class="note">Issue 대신 Discussions를 사용해 주세요. (Please use Discussions instead of Issues.)</p>
+    </section>
+
+    <section id="faq">
+      <h2>Known Issues / FAQ</h2>
+      <p>자주 발생하는 문제와 FAQ는 GitHub Discussions에 정리됩니다.</p>
+      <p>(Common issues and FAQs are maintained in GitHub Discussions.)</p>
+      <p><a href="https://github.com/snowsee/nota-release/discussions" target="_blank" rel="noopener">Discussions에서 확인하기</a></p>
+    </section>
+
+    <section id="security">
+      <h2>Security / Privacy</h2>
+      <p>공개 공간에는 민감한 정보를 공유하지 마세요.</p>
+      <p>(Do not share sensitive information in public discussions.)</p>
+      <ul>
+        <li>로그, 개인정보, 토큰, 내부 파일 경로 등은 게시하지 말아 주세요.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
