@@ -1,5 +1,22 @@
 ---
 export const prerender = true;
-
-return Astro.redirect('/ko/');
 ---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notaly</title>
+  </head>
+  <body>
+    <main>
+      <h1>Notaly</h1>
+      <p>Choose a language</p>
+      <ul>
+        <li><a href="/ko/">한국어</a></li>
+        <li><a href="/en/">English</a></li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,3 +1,4 @@
+@import "./fonts.css";
 @import "tailwindcss";
 
 html {
@@ -9,6 +10,28 @@ body {
 }
 
 :lang(ko) body {
-  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+  font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic",
     system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+:lang(ko) h1 {
+  font-size: 2.25rem;
+}
+
+:lang(ko) h2 {
+  font-size: 1.875rem;
+}
+
+:lang(ko) h3 {
+  font-size: 1.5rem;
+}
+
+:lang(ko) header a {
+  font-size: 0.875rem;
+}
+
+:lang(ko) a.inline-flex {
+  font-size: 0.875rem;
 }
